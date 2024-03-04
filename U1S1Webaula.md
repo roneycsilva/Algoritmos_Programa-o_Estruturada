@@ -163,4 +163,88 @@ O pseudocódigo é considerado uma ferramenta que pode auxiliar a programação
 
 Exemplo de pseudocódigo que calcula a média das notas dos alunos de um curso:
 
+```pascal
+1. programa calculo_media;
+
+2. var
+3.     valor1, valor2, soma, media: real;
+
+4. Início
+
+5.     escreva('Digite o valor 1');
+6.     leia(valor1);
+
+7.     escreva('Digite valor 2');
+8.     leia(valor2);
+
+9.     soma := valor1 + valor2;
+
+10.    media := soma / 2;
+
+11.    escreva('A media do aluno e: ', media);
+
+12.    se (media >= 6) então
+13.        escreva('Aluno Aprovado');
+14.    senão
+15.        escreva('Aluno Reprovado');
+16.    Fim se;
+
+17. Fim.
+```
+
+Exemplo de algoritmo escrito em pseudocódigo e executado em Visualg :
+
+```pascal
+algoritmo "media"
+
+var
+
+            valor1, valor2, soma, media: real
+
+inicio
+
+            Escreval("Digite o valor da nota 1: ")
+
+            Leia (valor1)
+
+            Escreval("Digite o valor da nota 2: ")
+
+            Leia (valor2)
+
+            soma 
+←
+ (valor1 + valor2)
+
+            soma 
+←
+ (soma / 2 )
+
+            soma 
+←
+ (soma / 2 )
+
+            Escreval(“A media do aluno e:” media)
+
+            se media >=6 entao
+
+                        escreval ("Aluno Aprovado média = ", media)
+
+                        senao
+
+                        escreval ("Aluno Reprovado média = ",media)
+
+            fimse
+
+Finalgoritmo
+```
+Perceba que os parâmetros utilizados também são considerados um algoritmo do tipo português estruturado, ou seja, de fácil entendimento e interpretação.
+
+Paradigmas de programação
+Após os estudos de algoritmos e as suas formas de construções, Manzano (2015) coloca em destaque os paradigmas de programação, que são caracterizados pelos paradigmas da:
+
+| Programação estruturada | Programação Orientada a Objetos |
+| --- | --- |
+| Onde o algoritmo é construído como sequência linear de funções ou módulo. | Onde o programador abstrai um programa como uma coleção de objetos que interagem entre si. |
+
+Os algoritmos são as bases para criação de um programa de computador, onde diversas aplicações poderão ocorrer. Um algoritmo bem estruturado vai gerar um programa para solução de um problema que antes, parecia complexo. Todas as áreas estão voltadas para a tecnologia e são através de diversas formas de pensamentos que os algoritmos são realizados.
 
