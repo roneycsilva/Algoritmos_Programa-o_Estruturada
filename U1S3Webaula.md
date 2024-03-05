@@ -1,33 +1,21 @@
 # **Algoritmos e Programação Estruturada**
-> Componentes e elementos de linguagem de programação 
+> Operações e expressões
 
-Nesta webaula, vamos conhecer curiosidades sobre acontecimentos relacionados com o mundo da programação.
+Nesta webaula temos como objetivo apresentar os operadores matemáticos, relacionais e lógicos. 
 
-## **Foguete Ariane 5**
-Você conhece o caso do foguete Ariane 5? 
-
-Trata-se de um projeto da Agência Espacial Europeia de um primeiro voo não tripulado em 4 de junho de 1996, que custou bilhões de dólares e levou 10 anos para ser construído. 
-O Foguete Ariane 5 explodiu 40 segundos após a decolagem em seu voo inaugural. Com isso, houve a destruição do foguete e de toda a carga que custava milhões de dólares, causando um enorme prejuízo financeiro e de tempo. 
-
-**E tudo isso não aconteceu por uma falha mecânica, mas por um erro de programação.**
-
-O programa que convertia um valor em float (ponto flutuante) para um inteiro de 16 bits (long int) recebeu como entrada um valor fora da faixa que suportava (“um estouro de inteiros”). 
-Com esse bug, os computadores principais, inclusive o de backup, desligaram ao mesmo tempo, alegando um erro de execução (run time error). 
-Por isso, é importante destacar que a declaração de uma variável de forma incorreta ou com tipos incompatíveis pode trazer erros muitas vezes catastróficos. Esse desastre mostra a importância da declaração de variáveis corretamente.
-####
-Algoritmo é uma sequência ordenada de passos que deve ser seguida para a realização de uma tarefa (BERG e FIGUEIRÓ, 1998).
-
-
-<img align="right" alt="image_01" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/af0e228c-c7d9-4d0f-b258-8b3f930a718c" width="300" height="280">       
+<img align="right" alt="image_01" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/d81d3104-3961-4cf0-9f48-a267ccd5b095" width="310" height="250">       
 
   <div style=" height: 300px; margin: 15px; position: relative; display: block;" >
    <p style="word-wrap: break-word; " 
 
->**BUG do milênio (Y2K)**
+>**Sistemas computacionais**
 
-Você sabia que no fim do século XX houve uma grande mobilização no mundo e em uma comunidade programadores, devido ao chamado "bug do milênio”? 
+Desde o momento em que você liga um computador (ou tablet, ou smartphone), centenas de processos são inicializados e passam a competir pelo processador para que possam ser executados e fazer a “mágica” do mundo digital acontecer. 
 
-Esse foi o nome dado para um provável acontecimento – que não se concretizou – na virada do ano de 1999 para 2000: havia o receio de que os sistemas da época não reconhecessem as datas do ano 2000 e retornassem para 1900. 
+Todos os resultados desses sistemas são obtidos através do processamento de dados e nesta webaula começaremos a estudar os recursos que lhe permitirão implementar soluções com processamento.
+Os sistemas computacionais são construídos para resolver os mais diversos problemas. Todos esses sistemas, independentemente da sua aplicação, são construídos em três partes: entrada, processamento e saída.
+
+Nos três casos, a leitura dos dados é feita para um único fim: processamento e geração de informações e essa etapa é construída a partir da combinação de operações aritméticas, relacionais, lógicas e outras técnicas de programação.
 
 
 
@@ -37,7 +25,24 @@ Esse foi o nome dado para um provável acontecimento – que não se concretizou
 
 &nbsp;</p>
 
->**Mas por que isso?** 
+>**Operadores aritméticos**
+
+<img align="right" alt="image_01" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/d81d3104-3961-4cf0-9f48-a267ccd5b095" width="310" height="250">       
+
+  <div style=" height: 300px; margin: 15px; position: relative; display: block;" >
+   <p style="word-wrap: break-word; " 
+
+>**Operadores aritméticos **
+
+Vamos começar a aprimorar nossos algoritmos através das operações aritméticas. Os operadores aritméticos podem ser classificados em unários ou binários (MANZANO, 2015)
+
+
+
+
+
+
+
+&nbsp;</p>
 
 Na época, recursos de memória eram caros e limitados – por exemplo, 1 MB de memória custava em torno de 700 dólares. Por isso, havia uma constante necessidade, por parte dos desenvolvedores, de economizar e otimizar espaço em memória. 
 Assim, na década de 1960 as datas eram armazenadas, porém, eram interpretados apenas dois dígitos para o ano – os dois últimos dígitos.
