@@ -14,52 +14,15 @@
 <div style="text-align: justify; font-size: 18px; margin: 10px;">
 <p> Considere um banco de dados relacional formado por três tabelas, conforme é apresentado na figura a seguir. As chaves primárias das tabelas <em>cliente</em> e <em>funcionario</em> são chaves estrangeiras da tabela <em>pessoa</em>.</div>
 
-<div style="text-align: justify; font-size: 18px; margin: 10px;">
-<p>A partir dessas informações, observe o código apresentado a seguir, escrito na linguagem C, que faz uso de operações binárias sobre variáveis inteiras.
-Como exemplo, em 2023 existe a prova de Engenharia da Computação, em 2021 existe a prova de Ciência da Computação, e assim por diante. Leia com atenção todas as provas relacionadas ao curso.
-</div>
-
-<p></p>
-
-    //
-    #include <stdio.h>
-
-    int main() {
-    // Declaração de variáveis
-    int a, b;
-    int x, y, z;
-
-    // Entrada de dados
-    printf("Digite dois números inteiros: ");
-    scanf("%d %d", &a, &b);
-
-    // Inicialização de variáveis
-    x = a;
-    y = b;
-    z = a + b;
-
-    // Processamento
-    while (a) {
-        x = x | b;
-        y = y ^ a;
-        z = z & (a + b);
-        a = a >> 1;
-        b = b << 1;
-    }
-
-    // Saída de resultados
-    printf("Resultados: %d %d %d\n", x, y, z);
-
-    return 0;
+<p align="center">
+  <img width="520" height="300" alt="image_01" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/b6922dc5-48ce-4008-b9b4-fca43a1259b2">
+</p>
 
 <div style="text-align: justify; font-size: 18px; margin: 10px;">
-<p> Após a chamada desse programa, caso o usuário entre com os valores 10 e 1, nessa ordem, qual será, exatamente, o valor da saída do programa? 
+<p> A partir dessas informações, considere que se queira realizar uma consulta que liste o nome e o saldo devedor de um subconjunto dos clientes. Essa consulta tem por objetivo encontrar clientes que são funcionários e que possuem saldo devedor maior do que seu salário. Com base nessas informações, assinale a opção que apresenta corretamente a consulta SQL,  em ordem crescente por saldo devedor.</div>
 
-</div>
-<p> </p>
-
-- [ ] A. 10 1 0
-- [ ] B. 10 1 11
-- [ ] C. 11 11 11
-- [ ] D. 15 12 2
-- [X] E. 15 13 0
+- [ ] A. SELECT * FROM cliente as c INNER JOIN pessoa as p, funcionario as f WHERE c.saldo_devedor > f.salario AND c.id_cliente=p.id_pessoa AND f.id_funcionario=p.id_pessoa ORDER BY c.saldo_devedor ASC 
+- [ ] B. SELECT p.nome, c.saldo_devedor FROM cliente as c, pessoa as p WHERE c.saldo_devedor > f.salario AND c.id_cliente=p.id_pessoa AND  f.id_funcionario=p.id_pessoa ORDER BY c.saldo_devedor DESC 
+- [ ] C. SELECT p.nome, c.saldo_devedor FROM cliente as c, pessoa as p, funcionario as f WHERE c.saldo_devedor < f.salario AND  c.id_cliente=p.id_pessoa AND f.id_funcionario=p.id_pessoa ORDER BY c.saldo_devedor ASC
+- [ ] D. SELECT p.nome, c.saldo_devedor FROM cliente as c LEFT OUTER JOIN pessoa as p on c.id_cliente=p.id_pessoa LEFT OUTER JOIN funcionario as f on p.id_pessoa=f.id_funcionario WHERE c.saldo_devedor > f.salario ORDER BY f.salario, c.saldo_devedor ASC 
+- [X] E. SELECT p.nome, c.saldo_devedor FROM cliente as c RIGHT OUTER JOIN pessoa as p ON c.id_cliente=p.id_pessoa RIGHT OUTER JOIN funcionario as f on p.id_pessoa=f.id_funcionario WHERE c.saldo_devedor > f.salario ORDER BY c.saldo_devedor ASC
