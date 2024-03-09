@@ -1,7 +1,6 @@
 # **Atividade U1S1 - Pós-aula**
 
-### Escolha um exercício de uma prova de computação do ENADE que esteja relacionado ao assunto desta unidade de ensino e seção (U1S1), resolva à mão no caderno, e apresente na próxima aula. Endereço do website do Exame Nacional de Desempenho dos Estudantes (ENADE), contendo a provas no formato PDF para serem baixadas:
-https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/
+### Dada uma sequência de caracteres * *  S = s1, s2, ..., sn, uma subsequência de S é dada pela remoção de zero ou mais caracteres de S. Formalmente, a sequência X = x1, x2, ..., xk é subsequência de S se existe uma sequência crescente de índices i1, ..., ik de S, tal que xj = Sij para todo j = 1, 2, ..., k. Define-se, também, um prefixo da sequência S com comprimento i para i = 0, ..., n, como Si = s1, s2, ..., si . 
 
 ## Questão
 
