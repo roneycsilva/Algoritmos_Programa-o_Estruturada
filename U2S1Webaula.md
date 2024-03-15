@@ -177,4 +177,64 @@ uma cor específica pelo cliente.
  * Caso nenhum dos valores seja encontrado, o comando default será executado.<p></p>
  * Os comandos são executados até o ponto que o comando break for localizado, que força a saída do laço de repetição.
 </details>
+<p>
+ 
+</p>
 
+## **Estrutura Condicional Encadeada**
+
+Conhecida como **ifs aninhados**. É um comando if que é o objeto de outros if e else. Ou seja, sempre um comando else estará ligado ao comando if de seu nível de aninhamento (Schildt,1997).
+Sintaxe:
+
+    if (condição) comando;
+    else
+       if (condição) comando;
+          else(condição) comando;
+    .
+    .
+    .
+         else  comando;
+
+<p align="center">Fluxograma – estrutura condicional encadeada<p>
+
+
+<p align="center">
+  <img width="520" height="500" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/ba8080d1-5d84-4ced-b875-010012ff806e" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+
+  No exemplo de estrutura condicional encadeada a seguir, será analisado os tipos de triângulo, partindo da premissa que ele deverá ser testado antes, para ver se forma ou não um triângulo.
+  <p>
+   </p>
+
+       #include <stdio.h>
+    #include <stdlib.h>
+    int main( ) {
+    int a, b, c;
+    printf("Classificacao do triangulo: informe a medida dos lados apertando a Tecla ENTER para cada medida:\n");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a< b + c && b< a +c && c < a + b)
+    	{ 
+    		printf("\n\n Dadas as medidas: %d, %d, %d, temos um triangulo", a, b, c);
+    		if( a == b && a == c)
+    		{
+    		printf("Este e um triangulo EQUIILATERO! \n");
+    		}
+    			else
+    				if ( a==b || a == c || b ==c)
+    				{
+    				printf("Este e um triangulo ISOSCELES!\n");
+    				}
+    					else
+    					printf("Este e um triangulo ESCALENO! \n");
+    	}
+    		else
+    		printf("\n\n As medidas fornecidas, %d,%d,%d nao formam um triangulo", a, b, c);
+    return 0;
+    }
+
+ | Vimos as estruturas condicionais e de seleção. Pense nas possibilidades que você pode ter usando essas estruturas de tomadas de decisão “if-else”, “if-“else-if” e “switch-case”. Lembre-se que para cada caso poderá ter uma particularidade diferente em desenvolver um programa.    |
+ | :------ |
