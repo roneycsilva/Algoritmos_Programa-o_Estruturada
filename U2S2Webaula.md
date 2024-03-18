@@ -20,13 +20,14 @@ Sintaxe do comando “while” :
 
  <p></p>
 
-    while (<condição>)
+```c
+   while (<condição>)
     {
     Comando 1;
     Comando 2;
     Comando n;
     } 
-
+``` 
 <p align="center">Fluxograma – repetição com teste no início”<p>
 
 
@@ -48,7 +49,8 @@ Quando utilizamos teste no início, pode ocorrer o famoso loop (laço) infinito,
 No exemplo de repetição condicional a seguir, utilizando o comando while com teste no início, mostrará a palavra “PROGRAMA” dez vezes.
 
 
-      #include <stdio.h>
+   ```c
+ #include <stdio.h>
       #include <stdlib.h>
       main() 
       {
@@ -61,8 +63,7 @@ No exemplo de repetição condicional a seguir, utilizando o comando while com t
           system("PAUSE");
           return 0;
       }
-
-
+``` 
 ### **Estrutura de Repetição condicional com teste no final – do/while**
 
 O laço “do-while” analisa a condição ao final do laço, ou seja, os comandos são executados antes do teste de condição. 
@@ -73,11 +74,13 @@ Sintaxe do comando “do/while” :
 
  <p></p>
 
-       Do
+```c
+     Do
     {
     comandos; 
     } 
     while (condição);
+``` 
 
 <p align="center">Fluxograma – repetição com teste no final
 <p>
@@ -93,6 +96,7 @@ Sintaxe do comando “do/while” :
 
 O exemplo a seguir, realiza um programa que calcula a metragem quadrada de um terreno usando o teste no final para criar a opção de digitar novos valores sem sair do programa.
 
+```c
       #include <stdio.h>
     main() {
     float metragem1,metragem2,resultado;
@@ -114,47 +118,33 @@ O exemplo a seguir, realiza um programa que calcula a metragem quadrada de um te
       }while (resp==1);
     return 0;
     }
-
+``` 
 O exemplo a seguir, realiza um programa que simula uma conta bancária (com tela de opções das transações. Ele repete uma entrada de dados até que determinada condição de saída seja atingida e, em seguida, acumule os valores digitados. Observe que foi utilizado o laço do-while para implementar o menu do programa, uma estrutura de repetição usando comparativo. Adaptado do livro do Soffner (2013). 
 
-    #include <stdio.h>
-    #include <stdlib.h>
-    main() 
-    {
-    float soma=0; 
-    float valor; 
-    int opcao; 
-    do {
-    printf("\n Digite uma Operacao");
-    printf("\n 1. Deposito"); 
-    printf("\n 2. Saque"); 
-    printf("\n 3. Saldo"); 
-    printf("\n 4. Sair"); 
-    printf("\n Opcao? "); 
-    scanf("%d", &opcao);
-    switch(opcao) {
-         case 1: printf("\n Valor do deposito? "); 
-                 scanf("%f", &valor); 
-                 soma=soma+valor; 
-                 break;
-         case 2: printf("\n Valor do saque? "); 
-                 scanf("%f", &valor); 
-                 soma=soma-valor; 
-                 break;
-         case 3: printf("\n Saldo atual = R$ %.2f \n", soma); 
-                 break; 
-         default: if(opcao!=4)
-    printf("\n Opcao Invalida! \n"); 
-    }   
-    }    
-    while (opcao!=4); 
-         printf("Fim das operacoes. \n\n"); 
-         system("pause");
-         return 0;
+```c
+      #include <stdio.h>
+    main() {
+    float metragem1,metragem2,resultado;
+    int resp;
+    metragem1 = 0;
+    metragem2 = 0;
+    resultado = 0;
+      do
+      {
+        printf("C A L C U L O    D E   M E T R O S    Q U A D R A D O S");
+        printf("\n \n Digite a primeira metragem do terreno: \n");
+        scanf("%f",&metragem1);
+        printf("\n Digite a segunda metragem do terreno: \n");
+        scanf("%f",&metragem2);
+        resultado = (metragem1 * metragem2);
+        printf("\n \n O Terreno tem = %.2f M2 \n",resultado);
+        printf("Digite 1 para continuar ou 2 para sair\n");
+        scanf("%d", &resp);
+      }while (resp==1);
+    return 0;
     }
-
-
-
-| Pesquise mais!                                                                                                                                                                                                     |           
+``` 
+   
+| Pesquise mais!          |           
 | :------                                                                                                                                                                                                              |                                                                                                
 | O comando do-while pode ter várias aplicações. Veja o vídeo no YouTube “feito de aluno para aluno” sobre esse tema: <p></p>DE ALUNO PARA ALUNO. Programar em C - Como Utilizar "do while" - Aula 13. 24 out. 2012. |
