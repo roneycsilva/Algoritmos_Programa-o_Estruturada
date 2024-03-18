@@ -108,101 +108,165 @@ Representação do comando for
 
 
    ```c
- #include <stdio.h>
-      #include <stdlib.h>
-      main() 
-      {
-          int cont=0; // foi definido na declaração da variável um valor inicial de "0"
-          while (cont < 10) // Será executado enquanto a cont for menor que 10
-          {
-                printf("PROGRAMA \n"); 
-                cont++; // será necessário incrementar um valor, para dar sequência no programa
-           } 
-          system("PAUSE");
-          return 0;
-      }
-``` 
-### **Estrutura de Repetição condicional com teste no final – do/while**
+   
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    for(x = 10,y = 0; x >= 0, y <= 10; x--,y++) 
+    {
+        printf("x=%2d, y=%2d\n",x,y);
+    }
+    return 0;
+}
 
-O laço “do-while” analisa a condição ao final do laço, ou seja, os comandos são executados antes do teste de condição. 
+```
 
-Neste caso, em específico, o usuário tem a possibilidade de digitar novamente uma nova informação (SCHILDT,1997).
+### **Aplicações com vetores**
 
-Sintaxe do comando “do/while” :
+Vetor (array) é um tipo especial de variável capaz de armazenar diversos valores “ao mesmo tempo”, usando um mesmo endereço na memória. 
+
+Sintaxe: tipo variavel [n] 
+
+Na sintaxe acima [n] representa a quantidade de colunas ou linhas.
 
  <p></p>
+<details>
+  <summary>Clique para ver o código</summary>
+  
+```c
+#include <stdio.h>
+
+void main() {
+    int num[5];
+    printf("Entre com um numero\n");
+    scanf("%d", &num[0]);
+    printf("O valor digitado foi: %d", num[0]*2);
+    getchar();
+}
+```
+</details>
+
+O exemplo a seguir mescla o comando for com while. O programa encontra a primeira posição para um determinado número inserido pelo usuário. 
 
 ```c
-     Do
+   
+#include <stdio.h>
+int main()
+{
+    int numero;
+    int i;
+    int posicao=0;
+    int vetor[10];
+    printf("Entre com o numero de ate 3 casas, diferente de zero, a ser procurado em um vetor de 10 posicoes: ");
+    scanf("%d", &numero);
+    //Preenche o vetor com numeros
+    for(i=0;i<10;i++)
     {
-    comandos; 
-    } 
-    while (condição);
+        printf("\nEntre com o numero para a posicao %02d: ", i+1);
+        scanf("%d", &vetor[i]);
+    }
+    //identifica a posicao do numero lido no vetor de entrada
+    while(vetor[posicao] != numero)
+    {
+        posicao++;
+    }
+      // Imprime vetor
+    for(i=0;i<10;i++)
+    {
+        printf("%03d ", vetor[i]);
+    }
+   // Imprime espaços até) a posição do numero, e em seguida um "*" sob o numero
+    printf("\n ");
+    for(i=0;i<posicao;i++)
+    {
+        printf("    ");
+    }
+    printf("*");
+    return 0;
+}
+
 ``` 
 
-<p align="center">Fluxograma – repetição com teste no final
-<p>
+### **Instrução continue**
 
+Uma instrução continue dentro de um laço possibilita que a execução de comandos corrente seja terminada, passando à próxima iteração do laço. 
 
+No exemplo a seguir, temos um programa que percorrerá os números de 1 a 30 e neste percurso, irá testar se foi digitado algum número ímpar, caso seja ímpar o programa continua o teste até o fim do laço. 
+
+```c
+
+#include <stdio.h>
+main()
+{
+int i;
+   for (i=1; i <=100;i=i+1)
+    if (i==30)
+      break;
+    else
+      if (i%2==1)
+       continue;
+      else
+       printf("%2d\n",i);
+       printf("Termino do laco\n");
+}   
+
+```
+
+### *Aplicações com matrizes**
+
+Matrizes são arranjos de duas ou mais dimensões. 
+
+Sintaxe: tipo variável [M][N] 
+
+Onde, [M] representa a quantidade de linhas e [N] a quantidade de colunas.
+
+O exemplo a seguir monta uma matriz 3 x 3, onde os valores são lançados de acordo com a linha e coluna. 
+
+```c
+
+#include <stdlib.h>
+main()
+{
+ int linha,coluna;
+ int matriz[3][3];
+     for (linha=0; linha<3; linha++)
+ {
+     for (coluna=0; coluna<3;coluna++)
+ {
+     printf("Digitar os valores da matriz para: linha %d, coluna %d:  ",linha+1,coluna+1);
+     scanf("%d", &matriz[linha][coluna]);
+ }
+ }
+     printf("Veja a sua Matriz\n");
+     for (linha=0;linha<=2;linha++)
+ {
+     for (coluna=0;coluna<3;coluna++)
+        printf("%d\t",matriz[linha][coluna]);
+        printf("\n\n");
+ }
+ system("pause");
+ return 0;
+}
+
+``` 
+
+<details>
+  <summary>Resultado</summary>
+  
 <p align="center">
-  <img width="400" height="410" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets//61150519/a9910550-00f7-4fe2-a818-0b2b4d1bc1df" width="250" height="75">
+  <img width="400" height="410" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/dd34c323-4168-43f8-b926-ad03bdd66d71" width="250" height="75">
   <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
 </div>
 </p>
 <p>
   </p>
+</details>
 
-O exemplo a seguir, realiza um programa que calcula a metragem quadrada de um terreno usando o teste no final para criar a opção de digitar novos valores sem sair do programa.
 
-```c
-      #include <stdio.h>
-    main() {
-    float metragem1,metragem2,resultado;
-    int resp;
-    metragem1 = 0;
-    metragem2 = 0;
-    resultado = 0;
-      do
-      {
-        printf("C A L C U L O    D E   M E T R O S    Q U A D R A D O S");
-        printf("\n \n Digite a primeira metragem do terreno: \n");
-        scanf("%f",&metragem1);
-        printf("\n Digite a segunda metragem do terreno: \n");
-        scanf("%f",&metragem2);
-        resultado = (metragem1 * metragem2);
-        printf("\n \n O Terreno tem = %.2f M2 \n",resultado);
-        printf("Digite 1 para continuar ou 2 para sair\n");
-        scanf("%d", &resp);
-      }while (resp==1);
-    return 0;
-    }
-``` 
-O exemplo a seguir, realiza um programa que simula uma conta bancária (com tela de opções das transações. Ele repete uma entrada de dados até que determinada condição de saída seja atingida e, em seguida, acumule os valores digitados. Observe que foi utilizado o laço do-while para implementar o menu do programa, uma estrutura de repetição usando comparativo. Adaptado do livro do Soffner (2013). 
+| Pesquise mais!     |
+| ---      | 
+| O vídeo referido a seguir traz uma dinâmica muito interessante na aplicação de vetores e matrizes. Realizado de “aluno para aluno”, apresenta uma revisão bem minuciosa da programação em linguagem C: | 
+| DE ALUNO PARA ALUNO. **Programar em C** - Revisão Vetores/Matrizes - Aula 27. 21 nov. 2012.  | 
 
-```c
-      #include <stdio.h>
-    main() {
-    float metragem1,metragem2,resultado;
-    int resp;
-    metragem1 = 0;
-    metragem2 = 0;
-    resultado = 0;
-      do
-      {
-        printf("C A L C U L O    D E   M E T R O S    Q U A D R A D O S");
-        printf("\n \n Digite a primeira metragem do terreno: \n");
-        scanf("%f",&metragem1);
-        printf("\n Digite a segunda metragem do terreno: \n");
-        scanf("%f",&metragem2);
-        resultado = (metragem1 * metragem2);
-        printf("\n \n O Terreno tem = %.2f M2 \n",resultado);
-        printf("Digite 1 para continuar ou 2 para sair\n");
-        scanf("%d", &resp);
-      }while (resp==1);
-    return 0;
-    }
-``` 
-   
-| Pesquise mais!          |           
-| :------                                                                                                                                                                                                              |                                                                                                
-| O comando do-while pode ter várias aplicações. Veja o vídeo no YouTube “feito de aluno para aluno” sobre esse tema: <p></p>DE ALUNO PARA ALUNO. Programar em C - Como Utilizar "do while" - Aula 13. 24 out. 2012. |
+
