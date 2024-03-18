@@ -23,7 +23,8 @@ Como exemplo, em 2023 existe a prova de Engenharia da Computação, em 2021 exis
 <p></p>
 
     
-    #include <stdio.h>
+ ```c
+   #include <stdio.h>
 
     int main() {
     // Declaração de variáveis
@@ -52,6 +53,7 @@ Como exemplo, em 2023 existe a prova de Engenharia da Computação, em 2021 exis
     printf("Resultados: %d %d %d\n", x, y, z);
 
     return 0;
+``` 
 
 <div style="text-align: justify; font-size: 18px; margin: 10px;">
 <p> Após a chamada desse programa, caso o usuário entre com os valores 10 e 1, nessa ordem, qual será, exatamente, o valor da saída do programa? 
