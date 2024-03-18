@@ -15,12 +15,13 @@ Lembrando que a instrução pode receber valores em ambos os casos (MANZANO, 201
 Sintaxe da instrução “if” (se) utilizada na [Linguagem C](https://conteudo.avaeduc.com.br/202001/INTERATIVAS_2_0/ALGORITMOS_E_PROGRAMACAO_ESTRUTURADA/U2/S1/index.html), um compilador online em C.
 
  <p></p>
-
+ 
+```c
     #if <(condição)>
     {
     <conjunto de comandos>;
     }  
-
+```
 <p align="center">Fluxograma – função “if”<p>
 
 
@@ -36,8 +37,8 @@ Sintaxe da instrução “if” (se) utilizada na [Linguagem C](https://conteudo
 
 No exemplo a seguir, não é considerado o “senão (else)”, simplesmente se a condição não for verdadeira ela não exibirá nada como resposta. 
 
-
-      int main()
+```c
+int main()
     {
     float idade; 
         printf("Digite sua idade: \n");
@@ -49,7 +50,7 @@ No exemplo a seguir, não é considerado o “senão (else)”, simplesmente se 
      return 0;
  
     }
-
+```  
 
 ### **Estrutura condicional composta**
 
@@ -58,7 +59,8 @@ Sintaxe da instrução “if/else” (se/senão):
 
  <p></p>
 
-    f <(condição)>
+```c
+f <(condição)>
     {
     <primeiro conjunto de comandos>;
      }
@@ -66,6 +68,8 @@ Sintaxe da instrução “if/else” (se/senão):
     {
     <segundo conjunto de comandos>;
     }
+```  
+    
 
 <p align="center">Fluxograma - funções “if” e  “else”<p>
 
@@ -80,22 +84,24 @@ Sintaxe da instrução “if/else” (se/senão):
 
 No exemplo de estrutura condicional composta a seguir, Maria e João estão se preparando para uma viagem, porém, se o orçamento final deles for igual ou maior que R$ 10.000,00 eles farão uma viagem internacional, senão deverão ficar com uma viagem nacional.
 
-
-      #include <stdio.h>
-      int main() {
-      float orcamento;
-      printf("Digite o valor do orcamento para viagem \n");
-      scanf("%f", &orcamento);
-      if (orcamento >=10000)
-      {
-      	printf("\n Joao e Maria possuem orçamento para uma viagem internacional, pois seu orcamento e de %f”, orcamento);
-      }	
-      else
-      {
-          printf("\n Joao e Maria irão optar por uma viagem nacional, seu orçamento ficou em %f", orcamento);
-      }
-      return 0;
-      }
+```c
+ #include <stdio.h>
+int main() {
+float orcamento;
+printf("Digite o valor do orcamento para viagem \n");
+scanf("%f", &orcamento);
+if (orcamento >=10000)
+{
+	printf("\n Joao e Maria possuem orçamento para uma viagem internacional, pois seu orcamento e de %f”, orcamento);
+}	
+else
+{
+    printf("\n Joao e Maria irão optar por uma viagem nacional, seu orçamento ficou em %f", orcamento);
+}
+return 0;
+}
+```  
+     
 
 ### **Estrutura condicional de seleção de casos "switch-case"**
 
@@ -106,17 +112,20 @@ Sintaxe da instrução “switch-case” (seleção de casos):
 
  <p></p>
 
-    switch (variável)
-    {
-    case constante1: 
-    <comandos>
-    break;
-    case constante2: 
-    <comandos>
-    break;
-    default: 
-    <comandos>
-    }
+```c
+switch (variável)
+{
+case constante1: 
+<comandos>
+break;
+case constante2: 
+<comandos>
+break;
+default: 
+<comandos>
+}
+
+``` 
 
 <p align="center">Fluxograma - funções “if” e  “else”<p>
 
@@ -132,43 +141,46 @@ Sintaxe da instrução “switch-case” (seleção de casos):
 No exemplo de estrutura condicional de seleção de casos a seguir, é aplicado um desconto de acordo com a escolha de
 uma cor específica pelo cliente.
 
-    #include <stdio.h>
-    int main() {
-    	char x;
-    	float valor,desc, total;
-    	printf("\n Digite o valor da compra \n");
-    	scanf("%f", &valor);
-    	printf("\n Digite a letra que representa o seu desconto de acordo com a cor\n");
-    	printf("a. azul\n");
-    	printf("v. vermelho\n");
-    	printf("b. branco\n");
-    	printf(" Digite sua opcao:");
-    	scanf("%s", &x);
-    	switch(x)
-    	{
-    	case 'a':
-    		printf("Voce escolheu azul, seu desconto sera de 30 por cento \n");
-    		desc=valor*0.30;
-    		total=valor-desc;
-    		printf("O valor da sua compra e %.2f\n", total);
-    		break;
-    	case 'v':
-    		printf("Voce escolheu vermelho, seu desconto sera de 20 por cento \n");
-    		desc=valor*0.20;
-    		total=valor-desc;
-    		printf("O valor da sua compra e %.2f\n", total);
-    		break;
-    	case 'b':
-    		printf("Voce escolheu branco, seu desconto sera de 10 por cento \n");
-    		desc=valor*0.10;
-    		total=valor-desc;
-    		printf("O valor da sua compra e %.2f\n", total);
-    		break;
-    	default:
-    		printf("opcao invalida\n");
-    	}
-    return 0;
-    }
+ ```c
+#include <stdio.h>
+int main() {
+	char x;
+	float valor,desc, total;
+	printf("\n Digite o valor da compra \n");
+	scanf("%f", &valor);
+	printf("\n Digite a letra que representa o seu desconto de acordo com a cor\n");
+	printf("a. azul\n");
+	printf("v. vermelho\n");
+	printf("b. branco\n");
+	printf(" Digite sua opcao:");
+	scanf("%s", &x);
+	switch(x)
+	{
+	case 'a':
+		printf("Voce escolheu azul, seu desconto sera de 30 por cento \n");
+		desc=valor*0.30;
+		total=valor-desc;
+		printf("O valor da sua compra e %.2f\n", total);
+		break;
+	case 'v':
+		printf("Voce escolheu vermelho, seu desconto sera de 20 por cento \n");
+		desc=valor*0.20;
+		total=valor-desc;
+		printf("O valor da sua compra e %.2f\n", total);
+		break;
+	case 'b':
+		printf("Voce escolheu branco, seu desconto sera de 10 por cento \n");
+		desc=valor*0.10;
+		total=valor-desc;
+		printf("O valor da sua compra e %.2f\n", total);
+		break;
+	default:
+		printf("opcao invalida\n");
+	}
+return 0;
+}
+
+``` 
 
 [Saiba Mais](#)
 <details>
@@ -186,14 +198,17 @@ uma cor específica pelo cliente.
 Conhecida como **ifs aninhados**. É um comando if que é o objeto de outros if e else. Ou seja, sempre um comando else estará ligado ao comando if de seu nível de aninhamento (Schildt,1997).
 Sintaxe:
 
-    if (condição) comando;
-    else
-       if (condição) comando;
-          else(condição) comando;
-    .
-    .
-    .
-         else  comando;
+```c
+if (condição) comando;
+else
+   if (condição) comando;
+      else(condição) comando;
+.
+.
+.
+     else  comando;
+
+``` 
 
 <p align="center">Fluxograma – estrutura condicional encadeada<p>
 
@@ -210,31 +225,33 @@ Sintaxe:
   <p>
    </p>
 
-       #include <stdio.h>
-    #include <stdlib.h>
-    int main( ) {
-    int a, b, c;
-    printf("Classificacao do triangulo: informe a medida dos lados apertando a Tecla ENTER para cada medida:\n");
-    scanf("%d %d %d", &a, &b, &c);
-    if (a< b + c && b< a +c && c < a + b)
-    	{ 
-    		printf("\n\n Dadas as medidas: %d, %d, %d, temos um triangulo", a, b, c);
-    		if( a == b && a == c)
-    		{
-    		printf("Este e um triangulo EQUIILATERO! \n");
-    		}
-    			else
-    				if ( a==b || a == c || b ==c)
-    				{
-    				printf("Este e um triangulo ISOSCELES!\n");
-    				}
-    					else
-    					printf("Este e um triangulo ESCALENO! \n");
-    	}
-    		else
-    		printf("\n\n As medidas fornecidas, %d,%d,%d nao formam um triangulo", a, b, c);
-    return 0;
-    }
+   ```c
+#include <stdio.h>
+#include <stdlib.h>
+int main( ) {
+int a, b, c;
+printf("Classificacao do triangulo: informe a medida dos lados apertando a Tecla ENTER para cada medida:\n");
+scanf("%d %d %d", &a, &b, &c);
+if (a< b + c && b< a +c && c < a + b)
+	{ 
+		printf("\n\n Dadas as medidas: %d, %d, %d, temos um triangulo", a, b, c);
+		if( a == b && a == c)
+		{
+		printf("Este e um triangulo EQUIILATERO! \n");
+		}
+			else
+				if ( a==b || a == c || b ==c)
+				{
+				printf("Este e um triangulo ISOSCELES!\n");
+				}
+					else
+					printf("Este e um triangulo ESCALENO! \n");
+	}
+		else
+		printf("\n\n As medidas fornecidas, %d,%d,%d nao formam um triangulo", a, b, c);
+return 0;
+}
+``` 
 
  | Vimos as estruturas condicionais e de seleção. Pense nas possibilidades que você pode ter usando essas estruturas de tomadas de decisão “if-else”, “if-“else-if” e “switch-case”. Lembre-se que para cada caso poderá ter uma particularidade diferente em desenvolver um programa.    |
  | :------ |
