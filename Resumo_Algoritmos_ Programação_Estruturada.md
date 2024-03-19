@@ -1,4 +1,3 @@
-
 # **Algoritmos e Programação Estruturada**
 > Este resumo faz parte dos estudos realizados no curso de Análise e Desenvolvimento de Sistemas na Faculdade Anhanguera, unidade Santana
 
@@ -291,4 +290,39 @@ Veja agora os comentários deste algoritmo:
 Lembre-se, quando você escreve um algoritmo do tipo portugol, que é um pseudocódigo, é preciso escrever de forma clara para que as pessoas possam interpretar e, futuramente, possam passar para uma linguagem de programação.
 <p></p>
 
-  
+> Veja abaixo um algoritmo escrito em pseudocódigo e executado em Visualg:
+
+ ```c
+
+algoritmo “media”
+var
+valor1, valor2, soma, media: real
+inicio
+19
+Escreval(“Digite o valor da nota 1: “)
+Leia (valor1)
+Escreval(“Digite o valor da nota 2: “)
+Leia (valor2)
+soma <- (valor1 + valor2)
+media <- (soma / 2 )
+Escreval(“A media do aluno e:” media)
+se media >=6 entao
+escreval (“Aluno Aprovado média = “, media)
+senao
+escreval (“Aluno Reprovado média = “,media)
+fimse
+finalagoritmo
+
+```  
+<div style="text-align: justify;">
+  Os parâmetros utilizados também são considerados um algoritmo do tipo português estruturado, ou seja, de fácil entendimento e interpretação.
+O software do Visualg é gratuito e o seu download está disponível na internet (VISUALG, 2020).
+ <p></p>
+Manzano, Franco e Villar (2015) destacam os paradigmas de programação após estudarem algoritmos e suas formas de construção. Eles mencionam a programação estruturada, onde o algoritmo é desenvolvido como uma sequência linear de funções ou módulos, e a programação orientada a objetos, na qual o programador concebe o programa como uma coleção de objetos que interagem entre si.
+
+</div>
+<p>
+  </p>
+
+
+
