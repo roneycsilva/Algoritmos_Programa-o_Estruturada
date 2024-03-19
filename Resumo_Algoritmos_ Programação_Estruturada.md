@@ -443,3 +443,79 @@ Exemplo: #include<time.h>
 Exemplo: #include<math.h>
 - ctype – biblioteca utilizada para classificação e transformação de caracteres.
 Exemplo: #include <ctype.h>
+
+Após a definição das bibliotecas, o programa é inicializado pela função (main). Veja o seguinte exemplo:
+```c
+
+main()
+{
+}
+
+```
+
+Quando utilizamos a “{“ (chave aberta) indica o início de uma função em C e quando usamos a “}” (chave fechada) indica o término das funções e do programa, porém, elas podem indicar o início e o término de alguns contextos na programação.
+Quando usamos a int antes de main () significa que retornará um número do tipo inteiro.
+
+```c
+
+int main ()
+{
+}
+
+```
+
+Também pode ser utilizada a função void, esta é uma função sem retorno, ou seja, não recebe nenhum argumento.
+```c
+
+void main ( )
+{
+}
+
+```
+Vamos iniciar pelos operadores aritméticos que são representados por binários e unários.
+
+### **Operadores binários**
+
+| Operadores | 
+| :---         |   
+| + soma   |
+| - subtração   |
+| * multiplicação   |
+| / divisão   |
+| % resto de divisão   |
+
+### **Operador unário**
+
+Segundo Mizrahi (2008), o operador unário também pode ser usado para representar a troca de sinais de uma determinada variável, por exemplo:
+
+| Unário | 
+| :---   |   
+| a= -5; |
+| a= -a; |
+
+Após essa operação, o valor de “a” assume o valor de 5 positivo.
+Os operadores relacionais são utilizados para realizar a comparação de valores. Eles podem ser classificados de acordo com o Quadro 1.3.
+
+<p align="center">
+  <img width="500" height="250" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/44cc4b7f-2186-44b9-b1a8-3533827eff8d" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+</div>
+
+Os operadores lógicos são utilizados quando nos deparamos com situações de conectividade lógica. Veja suas atribuições no Quadro 1.4:
+
+<p align="center">
+  <img width="600" height="300" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/5a4bf771-8bf7-411b-8c59-c83b8cf5520a" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+</div>
+
++ Segundo Mizrahi (2008), o operador lógico “NÃO” é considerado um operador unário e os operadores lógicos “E” e “OU” são binários.
++ Segundo Joyanes (2011), todas as linguagens de programação possuem elementos básicos que são utilizados como blocos construtivos, os quais formam regras para que esses elementos se combinem. Essas regras são chamadas de sintaxes de linguagem ou comandos para programação.
+Em linguagem de programação C, segundo Soffner (2013), existem um total de 32 palavras reservadas para programação, conforme definido pelo padrão ANSI. Veja no Quadro 1.5 as palavras reservadas em linguagem de programação C.
