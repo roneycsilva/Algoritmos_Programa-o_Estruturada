@@ -5,5 +5,6 @@ Preparando o material de estudo para Algoritmos e Programação Estruturada, o c
 2. Unidade de Ensino 2
 3. Unidade de Ensino 3
 4. Unidade de Ensino 4
+5. Resumo do Livro.
 
 - Questões do ENAD
