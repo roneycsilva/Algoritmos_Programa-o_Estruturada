@@ -264,8 +264,7 @@ Fim se;
 Fim.
 
 ``` 
-
-Veja agora os comentários deste algoritmo:
+## **Veja agora os comentários deste algoritmo:**
 
 1. Linha “calculo_media” esse é o nome reservado para identificar o algoritmo.
 2. Linha “Var”, indica a declaração das variáveis.
@@ -324,5 +323,123 @@ Manzano, Franco e Villar (2015) destacam os paradigmas de programação após es
 <p>
   </p>
 
+## **Pseudocódigo**
+<div style="text-align: justify;">
+   Após compreendermos os conceitos, aplicações e tipos de algoritmos, é crucial entender a relevância da linguagem de programação e suas variantes, assim como as perspectivas profissionais que a carreira de programador pode oferecer.
+Conforme Marçula (2013 p. 170), a linguagem de programação (LP) pode ser concebida como um conjunto de termos (vocabulário) e um conjunto de normas gramaticais (para conectar esses termos) usados para direcionar o sistema de computação a executar tarefas específicas e, dessa forma, criar programas. Cada linguagem possui seu próprio conjunto de termos-chave e estruturas sintáticas.
+ <p></p>
+ 
+De acordo com Tucker (2010), assim como entendemos as línguas naturais usadas no cotidiano, a linguagem de programação é a comunicação de ideias entre o computador e as pessoas. O autor também observa que as primeiras linguagens de computador utilizadas foram as linguagens de máquina e a linguagem assembly, a partir da década de 1940. Desde então, muitas linguagens surgiram, e novos paradigmas de linguagem de programação foram desenvolvidos.
+As definições dos paradigmas das linguagens de programação são descritas a seguir. Segundo Houaiss, Franco e Villar (2001, p. 329), “paradigma significa modelo, padrão. No contexto da programação de computadores, um paradigma é um modo, uma forma, um estilo de programar”. De acordo com Tucker (2010), um paradigma de programação está relacionado a um padrão de soluções de problemas, os quais, por sua vez, estão vinculados a uma determinada linguagem de programação. Tucker (2010) reconhece a evolução de quatro paradigmas de programação nas últimas três décadas:
+ <p>
+   </p>
+   </div>
+<p>
+  </p>
+
+  
++ **Programação imperativa**: considerada o paradigma mais antigo, que pode agrupar o programa e suas variáveis, juntamente com a abstração procedural, as atribuições, as sequências, os laços, os comandos condicionais e a manipulação de exceções como seus componentes de programação. Exemplos incluem COBOL, Fortran, C, Ada e Perl. <p></p>
++ **Programação orientada a objetos**: também conhecida na computação como (POO), é considerada uma coleção de objetos que interagem entre si, facilitando a programação. Exemplos incluem vSmalltalk, C++, Java e C#.<p></p>
++ **Programação funcional**: caracterizada por uma abordagem matemática, com cada função tendo um domínio e uma faixa. Exemplos incluem Lisp, Scheme, Haskell e ML.<p></p>
++ **Programação lógica**: é uma forma declarativa de programação, onde um programa pode modelar uma situação-problema declarando o resultado desejado, em vez de especificar como alcançá-lo. Exemplos incluem Prolog.<p></p>
+
+Todas as linguagens de programação para criar um programa possuem uma sintaxe, que é a maneira como o programa é escrito. De acordo com Tucker (2010, p. 24), “[a] sintaxe de uma linguagem de programação é uma descrição precisa de todos os seus programas gramaticalmente corretos”.
+Agora que compreendemos a importância de conhecer as linguagens de programação e suas aplicações, vamos explorar os componentes de um programa de computador.
+
+<div style="text-align: justify;">
+  Tucker (2010) compara a linguagem de programação à comunicação entre humanos, destacando que as primeiras linguagens de computadores foram as linguagens de máquina e assembly a partir da década de 1940. Ele também discute os paradigmas de programação, definindo-os como padrões de solução de problemas relacionados a determinadas linguagens. Tucker identifica quatro paradigmas principais: imperativo, orientado a objeto, funcional e lógico. Cada um possui características distintas e exemplos de linguagens associadas. Além disso, destaca a importância da sintaxe, que descreve a forma correta de escrever programas em linguagens de programação. Esses conceitos são cruciais para entender as linguagens de programação e suas aplicações na criação de programas de computador.
+</div>
+<p>
+  </p>
+
+## **Componentes de um programa de computador**
+<div style="text-align: justify;">
+ Conforme descrito por Damas (2016) e Aguilar (2011), envolve uma sequência de instruções para resolver um problema específico. Um programa pode ser desenvolvido em módulos distintos ou subprogramas. Para criar um programa, é necessário seguir algumas etapas:
+</div>
+<p>
+  </p>
+
++ Definir e analisar o problema a ser solucionado.
++ Criar um algoritmo ou um diagrama de fluxo.
++ Realizar o pseudocódigo.
+
+Para executar um programa é importante estar atento à sequência que os dados percorrem:
+
++ Entrada de dados: realiza as coletas de dados.
++ Processamento: os dados são transformados em informação.
++ Saída: onde todas as informações geradas pelo processamento de dados são apresentadas em um periférico.
+
+Para criar um programa, é necessário definir as instruções a serem utilizadas na solução de um problema. Conforme Aguilar (2011), as sintaxes (ou instruções) devem ser escritas e armazenadas na memória do computador na ordem em que se espera que sejam executadas. Essas instruções podem ser lineares, ou seja, executadas sequencialmente, ou não lineares, sendo redirecionadas por instruções de bifurcação.
+
+Veja um exemplo de instrução linear:
+Instrução 1
+Instrução 2
+.
+.
+Instrução n
+No caso de um programa não linear, ele pode se comportar da seguinte maneira.
+Instrução 1
+Instrução x
+Instrução y
+Instrução 2
+.
+.
+Instrução n
+Muito bem, a partir de agora você irá conhecer as sequências de instruções para criação de um programa de computador. Vamos lá!
+No contexto geral ficaria assim:
 
 
+1. Início do programa.
+2. Definição das variáveis e de possíveis atribuições.
+3. Instrução de leitura dos dados.
+4. Instrução do formato de escrita.
+5. Demais instruções e funções.
+6. Fim do programa. <p></p>
+Ou seja,
+
+```c
+
+Início
+variáveis;
+comando1;
+comando2;
+23
+×
+×
+comandoN;
+Fim.
+
+```
+Em algoritmos, a forma de escrever (maiúsculas e minúsculas) não acarretará em erros, porém, em linguagem de programação C é preciso diferenciar as palavras em letras maiúsculas e minúsculas.
+Veja no Quadro 1.2 a estrutura básica de um algoritmo e de um programa em linguagem C.
+
+<p align="center">
+  <img width="500" height="250" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/918e7755-f74d-4101-96a1-1cbaad47e3af" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+</div>
+
+<div style="text-align: justify;">
+ Quando iniciamos um programa na linguagem de programação C, segundo Manzano, Franco e Villar (2015), as primeiras linhas de programação são definidas pelas bibliotecas, também conhecidas como arquivos de cabeçalho.
+Para inserir as bibliotecas no programa é necessário colocar #include (inclusão de um arquivo no programa fonte) e em seguida, entre os símbolos de menor “<” e maior “>” (quando se usa < e > o arquivo é procurado na pasta include) o nome da biblioteca.
+Veja alguns exemplos de biblioteca em linguagem de programação C:
+</div>
+<p>
+  </p>
+ 
+- stdio – essa biblioteca é responsável pelas funções de entradas e saídas, como é o caso da função printf e scanf que vamos aprender mais à frente.<p></p>
+Exemplo: #include \<s tdio.h>
+
+- stdlib – essa biblioteca transforma as strings (vetores de caracteres) em números.
+Exemplo: #include \<s tdlib.h>
+- string – biblioteca responsável pela manipulação de strings.
+Exemplo: #include\<s tring.h>
+- time – biblioteca utilizada para manipulação de horas e datas.
+Exemplo: #include<time.h>
+- math – biblioteca utilizada para operações matemáticas.
+Exemplo: #include<math.h>
+- ctype – biblioteca utilizada para classificação e transformação de caracteres.
+Exemplo: #include <ctype.h>
