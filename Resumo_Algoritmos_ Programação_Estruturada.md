@@ -519,3 +519,18 @@ Os operadores lógicos são utilizados quando nos deparamos com situações de c
 + Segundo Mizrahi (2008), o operador lógico “NÃO” é considerado um operador unário e os operadores lógicos “E” e “OU” são binários.
 + Segundo Joyanes (2011), todas as linguagens de programação possuem elementos básicos que são utilizados como blocos construtivos, os quais formam regras para que esses elementos se combinem. Essas regras são chamadas de sintaxes de linguagem ou comandos para programação.
 Em linguagem de programação C, segundo Soffner (2013), existem um total de 32 palavras reservadas para programação, conforme definido pelo padrão ANSI. Veja no Quadro 1.5 as palavras reservadas em linguagem de programação C.
+
+### **Palavras reservadas em linguagem C**
+
+
+
+
+
+<p align="center">
+  <img width="600" height="300" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/6762179c-a828-48f4-8875-4dba1b84a913" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+</div>
