@@ -532,3 +532,19 @@ Em linguagem de programação C, segundo Soffner (2013), existem um total de 32 
 </div>
 
 Veja também, no Quadro 1.6, algumas palavras reservadas que são utilizadas em algoritmos.
+
+<p align="center">Palavras reservadas em linguagem</p>
+
+<p align="center">
+  <img width="600" height="300" src="https://github.com/roneycsilva/Algoritmos_Programa-o_Estruturada/assets/61150519/76399bf6-bd5b-4340-a48e-6010b6e0a8ac" width="250" height="75">
+  <div style="height: 75px; margin: 2px; position: relative; display: block; text-align: center;">
+</div>
+</p>
+<p>
+  </p>
+</div>
+
+Para atribuir um valor a uma variável em linguagem de programação C utilizamos o sinal de igual “=”. <p></p>
+Exemplos com linguagem C:<p></p>
+_soma = valor1 + valor2;_<p></p>
+_valor=5;_
