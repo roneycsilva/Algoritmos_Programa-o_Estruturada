@@ -12,7 +12,7 @@ Lembrando que a instrução pode receber valores em ambos os casos (MANZANO, 201
 
 ### **Estrutura condicional simples**
 
-Sintaxe da instrução “if” (se) utilizada na [Linguagem C](https://conteudo.avaeduc.com.br/202001/INTERATIVAS_2_0/ALGORITMOS_E_PROGRAMACAO_ESTRUTURADA/U2/S1/index.html), um compilador online em C.
+Sintaxe da instrução “if” (se) utilizada na Linguagem C, um compilador online em C.
 
  <p></p>
  
