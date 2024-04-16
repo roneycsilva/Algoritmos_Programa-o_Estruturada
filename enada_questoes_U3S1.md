@@ -40,6 +40,6 @@
 
 - [X] A. I apenas. 
 - [ ] B. II apenas 
-- [ ] C. I e II apenas. 
+- [ ] C. I e III apenas. 
 - [ ] D. II e III apenas
 - [ ] E. I, II e III.
