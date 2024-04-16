@@ -10,7 +10,7 @@
    Questão
 </p>
 
-### QUESTÃO 34
+### QUESTÃO 23
 
 <div style="text-align: justify; font-size: 18px; margin: 10px;">
 <p>
